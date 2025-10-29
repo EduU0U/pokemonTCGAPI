@@ -23,7 +23,7 @@ h1 {
 }
 
 .search input {
-  width: 60%;
+  width: 50%;
   padding: 0.7rem;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -36,6 +36,7 @@ h1 {
   color: white;
   border-radius: 8px;
   cursor: pointer;
+  margin-left: 0.5rem;
 }
 
 .cards {
@@ -81,4 +82,32 @@ h1 {
   padding: 0.5rem 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 60%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
 }
