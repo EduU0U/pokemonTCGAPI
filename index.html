@@ -16,6 +16,7 @@
     <section class="search">
       <input type="text" id="searchInput" placeholder="Busque um Pokémon (ex: Pikachu)">
       <button id="searchBtn">Buscar</button>
+      <button id="viewLogsBtn">Ver Logs</button>
     </section>
 
     <section id="cards" class="cards"></section>
@@ -26,6 +27,15 @@
     </section>
   </main>
 
+  <!-- Modal de Logs -->
+  <div id="logModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Logs Registrados</h2>
+      <ul id="logList"></ul>
+    </div>
+  </div>
+
   <footer>
     <p>© 2025 — Trabalho acadêmico. API: Pokémon TCG</p>
   </footer>
@@ -33,3 +43,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
